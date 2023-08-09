@@ -5,7 +5,7 @@ class todo:
     def __init__(self, root):
         self.root = root
         self.root.title('To-do-List')
-        self.root.geometry('650x410+300+150')
+        self.root.geometry('720x480+350+200')
 
         self.label = Label(self.root, text='To-Do-List-App', font='ariel, 25 bold', width=10,bd=5,bg='orange', fg='black')
         self.label.pack(side='top',fill=BOTH)
@@ -24,7 +24,7 @@ class todo:
         self.text = Text(self.root, bd=5, height=2, width=30, font='ariel, 10 bold')
         self.text.place(x=20, y=120)
 
-        #add tast#
+        #add task#
 
         def add():
             content = self.text.get(1.0, END)
